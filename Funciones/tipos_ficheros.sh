@@ -7,6 +7,6 @@ contar_por_extension() {
 }
 
 for ext in log txt csv; do
-    total=$(contar_por_extension ~/prueba_bash/datos "$ext")
+    total=$(contar_por_extension /home/boglam/prueba_bash/datos "$ext")
     echo "$ext → $total"
 done
