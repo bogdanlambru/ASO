@@ -5,8 +5,6 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
-sed -E 's/' $1
-
 fichero="$1"
 
 if [[ ! -f $fichero ]]; then
