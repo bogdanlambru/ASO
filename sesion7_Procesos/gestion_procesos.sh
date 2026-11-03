@@ -37,7 +37,6 @@ cambiar_prioridad() {
     fi
 
     if [[ $EUID -ne 0 ]]; then
-        # Usuario normal: el rango permitido es de 0 a 19 (no puede aumentar prioridad)
         if [[ $nice_val -lt 0 || $nice_val -gt 19 ]]; then
             echo "Error: el valor debe estar entre 0 y 19"
             return 1
